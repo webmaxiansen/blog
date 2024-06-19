@@ -94,6 +94,11 @@ include:
 exclude:
 ignore:
 
+# 音乐 实现全局音乐 将asset_inject设置成false
+aplayer:
+  enable: true
+  asset_inject: false
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
