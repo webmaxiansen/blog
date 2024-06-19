@@ -34,6 +34,7 @@ jobs:
           git config user.email '2398680927@qq.com'
           git add .
           git commit -m "Deploy to GitHub Pages"
+          git branch -M main # 确保使用 main 分支
           git push --force "https://${{ secrets.GH_TOKEN }}@github.com/webmaxiansen/webmaxiansen.github.io.git" main:main
         env:
           CI: true
