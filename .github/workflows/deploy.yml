@@ -1,0 +1,39 @@
+name: Deploy Hexo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 你可以根据需要更改为其他分支
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.19.0'
+
+      - name: Install Hexo and dependencies
+        run: |
+          npm install hexo-cli -g
+          npm install
+
+      - name: Build Hexo
+        run: hexo generate
+
+      - name: Deploy to GitHub Pages
+        run: |
+          cd public
+          git init
+          git config user.name 'mayang'
+          git config user.email '2398680927@qq.com'
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push --force "https://${{ secrets.GH_TOKEN }}@github.com/<webmaxiansen>/<webmaxiansen.github.io>.git" master:gh-pages
+        env:
+          CI: true
