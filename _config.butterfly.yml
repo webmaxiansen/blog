@@ -8,6 +8,11 @@ nav:
   fixed: true # fixed navigation bar
 
 # Menu 目錄
+# 图标来源 FontAwesome https://fontawesome.com/search
+# fas fa-heart：表示实心心形图标。
+# far fa-heart：表示轮廓心形图标。
+# fas fa-camera：表示实心相机图标。
+# fab fa-twitter：表示 Twitter 的品牌图标。
 menu:
   首页: / || fas fa-home
   工具: /archives/ || fas fa-screwdriver-wrench #fa-archive
@@ -19,6 +24,7 @@ menu:
     电影: /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
+  图库: /photo/ || fas fa-images
 
 # Code Blocks (代碼相關)
 # --------------------------------------
