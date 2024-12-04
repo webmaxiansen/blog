@@ -3,33 +3,26 @@
 # --------------------------------------
 
 nav:
-  logo: https://avatars.githubusercontent.com/u/58240519?v=4 # image
+  logo: # image
   display_title: true
-  fixed: true # fixed navigation bar
+  fixed: false # fixed navigation bar
 
 # Menu 目錄
-# 图标来源 FontAwesome https://fontawesome.com/search
-# fas fa-heart：表示实心心形图标。
-# far fa-heart：表示轮廓心形图标。
-# fas fa-camera：表示实心相机图标。
-# fab fa-twitter：表示 Twitter 的品牌图标。
 menu:
-  首页: / || fas fa-home
-  工具: /archives/ || fas fa-screwdriver-wrench #fa-archive
-  归档|| fas fa-book:
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
-  娱乐||fas fa-list:
-    音乐: /music/ || fas fa-music
-    电影: /movies/ || fas fa-video
+  # Home: / || fas fa-home
+  # Archives: /archives/ || fas fa-archive
+  # Tags: /tags/ || fas fa-tags
+  # Categories: /categories/ || fas fa-folder-open
+  # List||fas fa-list:
+  #   Music: /music/ || fas fa-music
+  #   Movie: /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
-  图库: /photo/ || fas fa-images
+  # About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: darker #  light / pale night / light / ocean / mac / mac light / false
+highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -40,28 +33,28 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/webmaxiansen || Github || '#24292e'
-  fas fa-envelope: <maxiansen2007@gmail.com> || Email || '#4a7dbe'
+  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # Image (圖片設置)
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/logo.jpg
+favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/logo.jpg
+  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: /img/indextop.png
+index_img:
 
 # If the banner of page not setting, it will show the top_img
-# default_top_img: /img/default.jpg
+default_top_img:
 
 # The banner image of archive page
 archive_img:
@@ -103,8 +96,8 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: true
-  subtitle: "Page Not Found"
+  enable: false
+  subtitle: 'Page Not Found'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
@@ -196,7 +189,7 @@ related_post:
 # post_pagination (分頁)
 # value: 1 || 2 || false
 # 1: The 'next post' will link to old post
-# 2: The 'next post' will link to new postfooter
+# 2: The 'next post' will link to new post
 # false: disable pagination
 post_pagination: 1
 
@@ -215,7 +208,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: Hi, welcome to my <a href="https://github.com/webmaxiansen/webmaxiansen.github.io">blog</a>!
+  custom_text:
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -238,29 +231,29 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/webmaxiansen
+      link: https://github.com/xxxxxx
   card_announcement:
-    enable: false
+    enable: true
     content: This is my Blog
   card_recent_post:
     enable: true
-    limit: 3 # if set 0 will show all
+    limit: 5 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
-    limit: 5 # if set 0 will show all
+    limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
-    limit: 30 # if set 0 will show all
+    limit: 40 # if set 0 will show all
     color: false
     orderby: random # Order of tags, random/name/length
     order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
-    enable: false
+    enable: true
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
@@ -273,7 +266,8 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
   card_post_series:
     enable: true
-    orderBy: "date" # Order by title or date
+    series_title: false # The title shows the series name
+    orderBy: 'date' # Order by title or date
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
 
 # busuanzi count for PV / UV in site
@@ -302,17 +296,17 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: true
+  enable: false
   # The text of a button
-  default: 簡
+  default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: "繁"
+  msgToTraditionalChinese: '繁'
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: "簡"
+  msgToSimplifiedChinese: '簡'
 
 # Read Mode (閲讀模式)
 readmode: true
@@ -328,11 +322,11 @@ darkmode:
   # autoChangeMode: false
   autoChangeMode: false
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
-  start: #18
-  end: #6
+  start: # 8
+  end: # 22
 
 # show scroll percent in scroll-to-top button
-rightside_scroll_percent: true
+rightside_scroll_percent: false
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -694,7 +688,7 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
-  color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
@@ -807,7 +801,7 @@ fancybox: true
 # series (系列文章)
 series:
   enable: true
-  orderBy: "title" # Order by title or date
+  orderBy: 'title' # Order by title or date
   order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
   number: true
 
@@ -847,14 +841,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: true
+  enable: false
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -864,8 +858,8 @@ aplayerInject:
 snackbar:
   enable: false
   position: bottom-left
-  bg_light: "#49b1f5" # The background color of Toast Notification in light mode
-  bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
+  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
+  bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
@@ -919,8 +913,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - '<div class="aplayer no-destroy" data-id="464916877" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>'
-    - <script src="https://maxiansen.top/Img/blog/js/mayang.js"></script>
+    # - <script src="xxxx"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -937,7 +930,7 @@ CDN:
   third_party_provider: jsdelivr
 
   # Add version number to url, true or false
-  version: false
+  version: true
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
