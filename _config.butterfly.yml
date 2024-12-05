@@ -15,25 +15,27 @@ nav:
 # fab fa-twitter：表示 Twitter 的品牌图标。
 menu:
   首页: / || fas fa-home
-  工具: /archives/ || fas fa-screwdriver-wrench #fa-archive
-  归档|| fas fa-book:
+  工具: /toolbox/ || fas fa-screwdriver-wrench #fa-archive
+  文章 || fas fa-book:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
+    归档: /archives/ || fas fa-archive
   娱乐||fas fa-list:
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
   图库: /photo/ || fas fa-images
+  友联: /link/ || fas fa-link
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: darker #  light / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  light / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
+highlight_height_limit: 140 # unit: px
 code_word_wrap: false
 
 # Social Settings (社交圖標設置)
@@ -58,7 +60,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: /img/indextop.png
+index_img: 
 
 # If the banner of page not setting, it will show the top_img
 # default_top_img: /img/default.jpg
@@ -109,14 +111,14 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: relative # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
+    date_format: relative # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
@@ -145,7 +147,7 @@ photofigcaption: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # Post
@@ -204,19 +206,19 @@ post_pagination: 1
 noticeOutdate:
   enable: false
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 365 # When will it be shown
   position: top # position: top/bottom
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 距离上次更新已经过去
+  message_next: 天，文章内容可能已过时。
 
 # Footer Settings
 # --------------------------------------
 footer:
   owner:
     enable: true
-    since: 2020
-  custom_text: Hi, welcome to my <a href="https://github.com/webmaxiansen/webmaxiansen.github.io">blog</a>!
-  copyright: true # Copyright of theme and framework
+    since: 2022
+  custom_text: #Hi, welcome to my <a href="https://github.com/webmaxiansen/webmaxiansen.github.io">blog</a>!
+  copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
 # --------------------------------------
@@ -237,23 +239,23 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
+      text: 前往小家...
       link: https://github.com/webmaxiansen
   card_announcement:
-    enable: false
-    content: This is my Blog
-  card_recent_post:
     enable: true
+    content: 欢迎来到我的博客ya~
+  card_recent_post:
+    enable: false
     limit: 3 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: true
+    enable: false
     limit: 5 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
-    enable: true
+    enable: false
     limit: 30 # if set 0 will show all
     color: false
     orderby: random # Order of tags, random/name/length
@@ -312,10 +314,10 @@ translate:
   # The text of the button when the language is Simplified Chinese
   msgToTraditionalChinese: "繁"
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: "簡"
+  msgToSimplifiedChinese: "简"
 
 # Read Mode (閲讀模式)
-readmode: true
+readmode: 2 #true
 
 # dark mode
 darkmode:
@@ -326,7 +328,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 2
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start: #18
   end: #6
@@ -611,23 +613,23 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
-#   scrollbar_color: "#49b1f5"
-#   meta_theme_color_light: "ffffff"
-#   meta_theme_color_dark: "#0d0d0d"
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
+  scrollbar_color: "#49b1f5"
+  meta_theme_color_light: "ffffff"
+  meta_theme_color_dark: "#0d0d0d"
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
@@ -648,10 +650,10 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: url(https://maxiansen.top/Img/blog/public/img/index_banner_background_img.webp)
 
 # Footer Background
-footer_bg: false
+footer_bg:  false
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -693,16 +695,16 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
-  count: 99 # the number of lines, default: 99.
+  count: 40 # the number of lines, default: 99.
   mobile: false
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
   mobile: false
 
@@ -728,16 +730,16 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
-  field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  enable: true
+  field: site # site/post
+  title-prefix-icon: '\f863' # '\f0c1'
+  title-prefix-icon-color:  '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
+  global-font-size: 15px
+  code-font-size: 14px
   font-family:
   code-font-family:
 
@@ -750,16 +752,21 @@ blog_title_font:
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
-  icon: # the unicode value of Font Awesome icon, such as '\3423'
-  icon-top:
+  icon: '\f2dc' # the unicode value of Font Awesome icon, such as '\3423'
+  icon-top: -10px
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
   # https://github.com/mattboldt/typed.js/#customization
+  startDelay: 300
+  typespeed: 150
+  backSpeed: 50 #
+  loop: true
+
   typed_option:
   # source 調用第三方服務
   # source: false 關閉調用
@@ -767,7 +774,7 @@ subtitle:
   # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
+  source: 1
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
 
@@ -862,14 +869,14 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
+  enable: true
+  position: top-left
   bg_light: "#49b1f5" # The background color of Toast Notification in light mode
   bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -880,7 +887,7 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
   placeholder:
   blur: false
@@ -917,10 +924,10 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="https://maxiansen.top/Img/blog/css/custom.css">
   bottom:
     - '<div class="aplayer no-destroy" data-id="464916877" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>'
-    - <script src="https://maxiansen.top/Img/blog/js/mayang.js"></script>
+    # - <script src="https://maxiansen.top/Img/blog/js/mayang.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work

@@ -1,10 +1,11 @@
 ---
 title: JS面试篇
-date: 2023-11-28 21:25:32
-tags: 
+tags:
   - 面试篇
 categories:
   - 前端
+abbrlink: 42252
+date: 2023-11-28 21:25:32
 ---
 
 ## 一、数据类型

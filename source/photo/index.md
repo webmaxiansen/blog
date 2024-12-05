@@ -1,7 +1,7 @@
 ---
 title: photo
 date: 2024-11-15 05:42:24
-type: page
+type: 
 ---
 
 <div class="gallery-group-main">

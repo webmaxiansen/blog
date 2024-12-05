@@ -3,22 +3,27 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 马先森
+title: 爱搞怪的小_马
 subtitle: ""
-description: ""
-keywords:
+description: "记录学习过程，分享学习成果和心得，内容以编程技术为主"
+keywords: [HTML, CSS, JavaScript, Java, Linux, Python, Vue, React]
 author: 马先森
-language: en
-timezone: ""
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://maxiansen.top
+permalink: post/:abbrlink.html #:year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# 新增abbrlink配置,支持博文永久链接
+abbrlink:
+  alg: crc16 # 算法选项，可选值为crc16和crc32
+  rep: dec   # 输出进制，dec为十进制，hex为十六进制
 
 # Directory
 source_dir: source
@@ -62,7 +67,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ""
-  per_page: 10
+  per_page: 6
   order_by: -date
 
 # Category & Tag
@@ -110,3 +115,79 @@ deploy:
   type: git
   repo: https://github.com/webmaxiansen/webmaxiansen.github.io.git
   branch: main
+
+# footer_beautify
+# 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
+# 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
+footer_beautify:
+  enable:
+    timer: true # 计时器开关
+    bdage: false # 徽标开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  exclude: #屏蔽页面
+    # - /posts/
+    # - /about/
+  layout: # 挂载容器类型
+    type: id
+    name: footer-wrap
+    index: 0
+  # 计时器部分配置项（看你喜欢哪个，最好下载下来放到自己的项目中不然会增加我网站的负载）
+  # 这是店长的 
+  runtime_js:  https://maxiansen.top/Img/blog/js/blogBottomRuntime.js
+  # runtime_css: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
+  # 徽标部分配置项
+  swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数
+  # bdageitem:
+  #   - link: https://hexo.io/ #徽标指向网站链接
+  #     shields: https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo #徽标API
+  #     message: 博客框架为Hexo_v6.2.0 #徽标提示语
+  #   - link: https://butterfly.js.org/
+  #     shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender
+  #     message: 主题版本Butterfly_v4.3.1
+  #   - link: https://vercel.com/
+  #     shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel
+  #     message: 本站采用多线部署，主线路托管于Vercel
+  #   - link: https://dashboard.4everland.org/
+  #   # https://img.shields.io/badge/Hosted-4EVERLAND-3FE2C1?style=flat&logo=IPFS
+  #     shields: https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&logo=IPFS
+  #     message: 本站采用多线部署，备用线路托管于4EVERLAND
+  #   - link: https://github.com/
+  #     shields: https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub
+  #     message: 本站项目由Github托管
+  #   - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+  #     shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris
+  #     message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+  # swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
+  # swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
+  # swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
+
+# 分类磁贴
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: true # 开关
+  priority: 20 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: odd # odd：3列 | even：4列
+  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+    - descr: 前端
+      cover: https://maxiansen.top/Img/blog/public/img/dm3.webp
+
+    - descr: Java
+      cover: https://maxiansen.top/Img/blog/public/img/dm4.webp
+
+    - descr: Python
+      cover: https://maxiansen.top/Img/blog/public/img/dm5.webp
+
+    - descr: MySql
+      cover: https://maxiansen.top/Img/blog/public/img/dm6.webp
+
+    - descr: 生活
+      cover: https://maxiansen.top/Img/blog/public/img/dm7.webp
+
+  custom_css: https://maxiansen.top/Img/blog/css/custom.css

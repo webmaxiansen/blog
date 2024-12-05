@@ -1,10 +1,11 @@
 ---
 title: CSS面试篇
-date: 2023-11-29 22:37:18
 tags:
   - 面试篇
 categories:
   - 前端
+abbrlink: 49779
+date: 2023-11-29 22:37:18
 ---
 
 ## 一、CSS基础
