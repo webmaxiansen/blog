@@ -17,8 +17,11 @@ menu:
   首页: / || fas fa-home
   工具: /toolbox/ || fas fa-screwdriver-wrench #fa-archive
   文章 || fas fa-book:
+  工具: /toolbox/ || fas fa-screwdriver-wrench #fa-archive
+  文章 || fas fa-book:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
+    归档: /archives/ || fas fa-archive
     归档: /archives/ || fas fa-archive
   娱乐||fas fa-list:
     音乐: /music/ || fas fa-music
@@ -926,8 +929,10 @@ inject:
   head:
     - <link rel="stylesheet" href="https://maxiansen.top/Img/blog/css/custom.css">
   bottom:
+    - <canvas id="universe"></canvas>
     - '<div class="aplayer no-destroy" data-id="464916877" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>'
-    # - <script src="https://maxiansen.top/Img/blog/js/mayang.js"></script>
+    # - <script defer type="module" src="/js/custom.js"></script>
+    - <script defer type="module" src="https://maxiansen.top/Img/blog/js/custom.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
