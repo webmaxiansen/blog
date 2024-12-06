@@ -1,11 +1,10 @@
 ---
 title: Vue面试篇
-tags:
+date: 2023-11-29 22:37:24
+tags: 
   - 面试篇
 categories:
   - 前端
-abbrlink: 39403
-date: 2023-11-29 22:37:24
 ---
 
 ## 一、Vue 基础
