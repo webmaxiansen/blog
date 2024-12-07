@@ -175,19 +175,19 @@ categoryBar:
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
-    - descr: 前端
+    - descr: 
       cover: https://maxiansen.top/Img/blog/public/img/dm3.webp
 
-    - descr: Java
+    - descr: 
       cover: https://maxiansen.top/Img/blog/public/img/dm4.webp
 
-    - descr: Python
+    - descr: 
       cover: https://maxiansen.top/Img/blog/public/img/dm5.webp
 
-    - descr: MySql
+    - descr: 
       cover: https://maxiansen.top/Img/blog/public/img/dm6.webp
 
-    - descr: 生活
+    - descr: 
       cover: https://maxiansen.top/Img/blog/public/img/dm7.webp
 
   custom_css: https://maxiansen.top/Img/blog/css/custom.css
