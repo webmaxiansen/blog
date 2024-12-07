@@ -15,6 +15,7 @@ dist-ssr
 db.json
 package-lock.json
 yarn.json
+123
 
 # Editor directories and files
 .vscode/*
