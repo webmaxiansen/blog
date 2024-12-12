@@ -161,7 +161,8 @@ footer_beautify:
   # swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
   # swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
   # swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
-
+# 文章页面是否开启波浪效果
+wave: false
 # 分类磁贴
 # see https://akilar.top/posts/a9131002/
 categoryBar:
