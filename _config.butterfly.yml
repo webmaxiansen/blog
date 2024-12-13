@@ -497,6 +497,8 @@ twikoo:
   region:
   visitor: false
   option:
+    placeholder: 🐧在昵称框输入QQ号会自动获取邮箱和昵称，其中必填项为昵称和邮箱<br>📧本站已开启邮件通知，回复您评论的同时会email到您的邮箱，因此请确保邮箱的有效性
+
 
 # Giscus
 # https://giscus.app/
@@ -653,7 +655,7 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://maxiansen.top/Img/blog/public/img/index_banner_background_img.webp)
+background: url(https://images.maxiansen.top/blog/public/img/index_banner_background_img.webp)
 
 # Footer Background
 footer_bg: false
@@ -927,11 +929,11 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="https://maxiansen.top/Img/blog/css/custom.css">
+    - <link rel="stylesheet" href="https://images.maxiansen.top/blog/css/custom.css">
   bottom:
     - <canvas id="universe"></canvas>
     - '<div class="aplayer no-destroy" data-id="464916877" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>'
-    - <script defer type="module" src="https://maxiansen.top/Img/blog/js/custom.js"></script>
+    - <script defer type="module" src="https://images.maxiansen.top/blog/js/custom.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
