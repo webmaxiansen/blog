@@ -493,7 +493,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: http://blog.maxiansen.top/
+  envId: https://blog.maxiansen.top/
   region:
   visitor: false
   option:
