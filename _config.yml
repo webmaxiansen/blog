@@ -134,7 +134,7 @@ footer_beautify:
     index: 0
   # 计时器部分配置项（看你喜欢哪个，最好下载下来放到自己的项目中不然会增加我网站的负载）
   # 这是店长的 
-  runtime_js:  https://maxiansen.top/Img/blog/js/blogBottomRuntime.js
+  runtime_js:  https://images.maxiansen.top/blog/js/blogBottomRuntime.js
   # runtime_css: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
   # 徽标部分配置项
   swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数
