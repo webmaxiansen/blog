@@ -161,7 +161,8 @@ footer_beautify:
   # swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
   # swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
   # swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
-
+# 文章页面是否开启波浪效果
+wave: false
 # 分类磁贴
 # see https://akilar.top/posts/a9131002/
 categoryBar:
@@ -175,19 +176,18 @@ categoryBar:
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
-    - descr: 前端
-      cover: https://maxiansen.top/Img/blog/public/img/dm3.webp
+    - descr: 
+      cover: https://images.maxiansen.top/blog/public/img/dm3.webp
 
-    - descr: Java
-      cover: https://maxiansen.top/Img/blog/public/img/dm4.webp
+    - descr: 
+      cover: https://images.maxiansen.top/blog/public/img/dm4.webp
 
-    - descr: Python
-      cover: https://maxiansen.top/Img/blog/public/img/dm5.webp
+    - descr: 
+      cover: https://images.maxiansen.top/blog/public/img/dm5.webp
 
-    - descr: MySql
-      cover: https://maxiansen.top/Img/blog/public/img/dm6.webp
+    - descr: 
+      cover: https://images.maxiansen.top/blog/public/img/dm6.webp
 
-    - descr: 生活
-      cover: https://maxiansen.top/Img/blog/public/img/dm7.webp
-
-  custom_css: https://maxiansen.top/Img/blog/css/custom.css
+    - descr: 
+      cover: https://images.maxiansen.top/blog/public/img/dm7.webp
+  custom_css: https://images.maxiansen.top/blog/css/custom.css
