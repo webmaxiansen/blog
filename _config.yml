@@ -177,18 +177,17 @@ categoryBar:
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
     - descr: 
-      cover: https://maxiansen.top/Img/blog/public/img/dm3.webp
+      cover: https://images.maxiansen.top/blog/public/img/dm3.webp
 
     - descr: 
-      cover: https://maxiansen.top/Img/blog/public/img/dm4.webp
+      cover: https://images.maxiansen.top/blog/public/img/dm4.webp
 
     - descr: 
-      cover: https://maxiansen.top/Img/blog/public/img/dm5.webp
+      cover: https://images.maxiansen.top/blog/public/img/dm5.webp
 
     - descr: 
-      cover: https://maxiansen.top/Img/blog/public/img/dm6.webp
+      cover: https://images.maxiansen.top/blog/public/img/dm6.webp
 
     - descr: 
-      cover: https://maxiansen.top/Img/blog/public/img/dm7.webp
-
-  custom_css: https://maxiansen.top/Img/blog/css/custom.css
+      cover: https://images.maxiansen.top/blog/public/img/dm7.webp
+  custom_css: https://images.maxiansen.top/blog/css/custom.css
