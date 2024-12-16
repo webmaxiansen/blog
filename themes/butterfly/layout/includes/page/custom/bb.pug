@@ -1,0 +1,25 @@
+main.container
+  h2.section-title 📚 站长的唠叨 (#{page.rants.length})
+
+  section.rants
+    if page.rants && page.rants.length > 0
+      .rant-list
+        each rant in page.rants
+          article.rant-card
+            .rant-header
+              img.avatar(src=rant.avatar, alt="头像")
+              .user-info
+                h3.username= rant.username || "站长"
+                span.date= rant.date || "未知日期"
+            .rant-content
+              p= rant.content || "这里是站长的唠叨内容。"
+            .flex_image 
+              if rant.images 
+                a(href=rant.images , data-fancybox="gallery")
+                  img(src=rant.images , alt="图片" class="rant-image")
+            .rant-footer
+              span.tag 日常唠叨 📝
+    else
+      p.no-rants 暂时没有唠叨内容。
+
+!= page.content
