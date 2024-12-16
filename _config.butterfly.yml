@@ -20,11 +20,14 @@ menu:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
     归档: /archives/ || fas fa-archive
-  娱乐||fas fa-list:
-    音乐: /music/ || fas fa-music
-    电影: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  # 娱乐||fas fa-list:
+  #   音乐: /music/ || fas fa-music
+  #   电影: /movies/ || fas fa-video
+  # Link: /link/ || fas fa-link <i class="fa-solid fa-laptop"></i>
+  关于 || fas fa-laptop:
+    唠叨: /bb/ || fas fa-comment 
+    个人: /personal/ || fas fa-paper-plane
+    恋爱小屋: /love/ || fas fa-heart
   图库: /photo/ || fas fa-images
   友联: /link/ || fas fa-link
 
