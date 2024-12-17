@@ -1,7 +1,7 @@
 ---
 title: photo
 date: 2024-11-15 05:42:24
-type: page
+type: photo
 top_img: "url(https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png)"
 aside: false
 comments: false
@@ -30,7 +30,8 @@ comments: false
 </style>
 
 <div class="gallery-group-main">
-{% galleryGroup '封面专区' '本站用做文章封面图片' '/photo/fm' https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %}
-{% galleryGroup '漫威' '关于漫威的图片' '/Gallery/marvel' https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg %}
-{% galleryGroup 'OH MY GIRL' '关于OH MY GIRL的图片' '/Gallery/ohmygirl' https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg %}
+{% galleryGroup '封面专区' '本站用做文章封面图片' '/photo/fm' https://images.maxiansen.top/blog/public/img/fm/default_cover_1.webp %}
+{% galleryGroup '动漫二次元' '收藏的关于一些背景' '/photo/dm' https://images.maxiansen.top/blog/public/img/dm/dark_mode.webp %}
+{% galleryGroup '搜图神器' '使你快速找到自己所有的图片 加速效率' 'https://www.soutushenqi.com/' https://images.maxiansen.top/blog/public/img/fm/default_cover_26.webp %}
+{% galleryGroup '我的生活' '记录自己生活中的一些点滴' '/photo/sh' https://images.maxiansen.top/blog/public/img/sh/sh1.jpg %}
 </div>
