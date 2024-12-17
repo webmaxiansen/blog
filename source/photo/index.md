@@ -1,5 +1,5 @@
 ---
-title: photo
+title: 画廊
 date: 2024-11-15 05:42:24
 type: photo
 top_img: "url(https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png)"
