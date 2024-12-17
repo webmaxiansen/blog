@@ -47,7 +47,8 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
               use(href='#gentle-wave', x='48', y='7')
     else if is_home() 
       #site-info
-        h1#site-title=site_title
+        if page.show_title !== false
+          h1#site-title= site_title
         if theme.subtitle.enable
           - var loadSubJs = true
           #site-subtitle
@@ -58,5 +59,6 @@ header#page-header(class=`${isHomeClass+isFixedClass}` style=bg_img)
       #scroll-down
         i.fas.fa-angle-down.scroll-down-effects
     else
-      #page-site-info
-        h1#site-title=site_title
+      if page.show_title !== false
+        #page-site-info
+          h1#site-title=site_title
