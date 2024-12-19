@@ -91,7 +91,7 @@ updated_option: "mtime"
 # Pagination
 ## Set per_page to 0 to disable pagination
 per_page: 5
-pagination_dir: ptoto
+pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
@@ -192,3 +192,7 @@ categoryBar:
       cover: https://images.maxiansen.top/blog/public/img/dm7.webp
   custom_css: https://images.maxiansen.top/blog/css/custom.css
 
+search:
+  path: search.xml
+  field: post
+  content: true

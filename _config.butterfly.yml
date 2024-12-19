@@ -69,7 +69,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-# default_top_img: /img/default.jpg
+default_top_img: #/img/default.jpg
 
 # The banner image of archive page
 archive_img:
@@ -102,7 +102,42 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_1.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_2.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_3.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_4.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_5.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_6.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_7.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_8.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_9.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_10.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_11.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_12.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_13.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_14.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_15.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_16.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_17.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_18.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_19.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_20.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_21.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_22.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_23.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_24.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_25.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_26.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_27.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_28.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_29.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_30.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_31.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_32.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_33.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_34.webp
+  # -  https://images.maxiansen.top/blog/public/img/fm/default_cover_35.webp
+
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -198,7 +233,7 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 3 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # post_pagination (分頁)
@@ -334,7 +369,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: 2
+  autoChangeMode: false #2
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start: #18
   end: #6
@@ -380,7 +415,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1
@@ -404,7 +439,7 @@ docsearch:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq, #facebook,twitter,
 
 # AddToAny
 # https://www.addtoany.com/
@@ -703,7 +738,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -712,13 +747,13 @@ canvas_nest:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999 # -1 or 9999
   mobile: false
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
@@ -734,7 +769,7 @@ clickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Beautify (美化頁面顯示)
 beautify:
@@ -788,11 +823,11 @@ subtitle:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 1
+  source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
 
@@ -958,6 +993,37 @@ CDN:
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format:
+
+wowjs:
+  enable: true #控制动画开关。true是打开，false是关闭
+  priority: 10 #过滤器优先级
+  mobile: false #移动端是否启用，默认移动端禁用
+  animateitem:
+    - class: recent-post-item #必填项，需要添加动画的元素的class
+      style: animate__zoomIn #必填项，需要添加的动画
+      duration: 2s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 1s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1 #选填项，动画重复的次数
+    - class: card-widget
+      style: animate__zoomIn
+  animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
+  wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
+  wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
+
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.png #link_card标签默认的图标图片
+  CDN:
+    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
 
   option:
     # abcjs_basic_js:
