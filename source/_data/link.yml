@@ -13,11 +13,11 @@
       descr: A Simple and Card UI Design theme for Hexo
       siteshot: https://source.fomal.cc/siteshot/butterfly.js.org.jpg
 
-    - name: Fomalhaut🥝
-      link: https://www.fomal.cc/
-      avatar: https://www.fomal.cc/assets/avatar.webp
-      descr: Future is now 🍭🍭🍭
-      siteshot: https://source.fomal.cc/siteshot/www.fomal.cc.webp
+    # - name: Fomalhaut🥝
+    #   link: https://www.fomal.cc/
+    #   avatar: https://www.fomal.cc/assets/avatar.webp
+    #   descr: Future is now 🍭🍭🍭
+    #   siteshot: https://source.fomal.cc/siteshot/www.fomal.cc.webp
 
     - name: Akilarの糖果屋
       link: https://akilar.top/
